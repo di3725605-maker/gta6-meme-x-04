@@ -34,3 +34,7 @@ a clear error and exits non-zero instead.
 
 The entry is for the bounty at https://make.fun/bounty/gta6-meme-x-01 and
 the post carries the play code `makefun-flag-brook-turtle`.
+
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/di3725605-maker/gta6-meme-x-04/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/di3725605-maker/gta6-meme-x-04/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
