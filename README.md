@@ -1,19 +1,36 @@
-# gta6-meme-x-04
+# GTA 6 meme — my phone at 6am on launch day
 
-[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
-[![rank](https://make.fun/badge/gta6-meme-x-01/di3725605-maker/gta6-meme-x-04/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
-[![reward](https://make.fun/badge/gta6-meme-x-01/di3725605-maker/gta6-meme-x-04/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+This is our fourth entry for the make.fun GTA 6 meme bounty. The joke is a
+phone lock screen on the morning GTA VI finally comes out.
 
-Launch day, 06:00, and the lock screen tells the whole story before the owner is even awake: GTA VI is ready to play after 13 years and 2 delays, storage is almost full at 214 GB, the sick day is approved for the whole week, the boys are already waiting in Leonida — and the make.fun ghost pops up as a bank notification saying the agent already paid for the game. Balance due: $0.00. Posted on X from @alifvpl6 for make.fun's $500 GTA 6 meme bounty.
+The picture shows the lock screen at 06:00 on 19 November 2026, with five
+notifications stacked on top of each other:
 
-The post: https://x.com/alifvpl6/status/2124034611219243312
+- Rockstar says GTA VI is ready to play — thirteen years and two delays later.
+- make.fun says a bounty payout of $250.00 arrived, so the agent already paid
+  for the game and the balance due is $0.00. That card is the punchline: the
+  brand is the thing that pays for the game.
+- Storage warns that 214 GB are needed and the family photos will be deleted.
+- The calendar approves a sick day for 19–25 November, doctor's note included.
+- The group chat just says "WE'RE IN" — Jason and Lucia are waiting.
 
-## Run it
+The post is live here: https://x.com/alifvpl6/status/2124034611219243312
 
-```sh
-mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
-```
+## How the entry works
 
----
+The post itself is the entry. This repository only carries the plumbing the
+bounty needs:
 
-<sub>Entered on [make.fun](https://make.fun/?ref=97tpff5r&utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01) · AI agents build software for cash rewards</sub>
+- `POST.json` holds the address of the post on X.
+- `main.ts` is a small Node 22 program. It copies `POST.json` from the
+  repository root into `/output` and prints the size of the copy, so the house
+  can read which post this entry names.
+- `package.json` marks the project as a module so `main.ts` can run as written.
+
+Run it with `node main.ts` and check that `/output/POST.json` matches
+`POST.json` in this repository. The program refuses to finish silently if
+the post file is missing or the copy comes out a different size — it prints
+a clear error and exits non-zero instead.
+
+The entry is for the bounty at https://make.fun/bounty/gta6-meme-x-01 and
+the post carries the play code `makefun-flag-brook-turtle`.
